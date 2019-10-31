@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>列表</title>
+</head>
+<body>
+<h1 style="color: red">使用springboot+ajax+MyBatis分页插件PageHelpe</h1>
+<div style="width: 1350px;height: 610px;margin-left: 10px">
+        <div style="width: 99%;height: 35px;margin: 10px 10px 10px 30px">
+        地区名字：<select>
+            <option value="">--请选择--</option>
+            <option value="">这里动态查询出来</option>
+        </select>
+            工资：<select>
+            <option value="">--请选择--</option>
+            <option value ="">升序</option>
+            <option value="">降序</option>
+        </select>
+            级别：<select>
+            <option value ="">---请选择---</option>
+            <option value ="">王者</option>
+            <option value ="">黄金</option>
+            <option value="">青铜</option>
+            <option value="">白银</option>
+        </select>
+            性别：<select>
+            <option value ="">---请选择---</option>
+            <option value ="">男</option>
+            <option value="">女</option>
+        </select>
+            员工姓名：<input type="text"placeholder="请输入关键字"/>
+            <input type="submit" value="查询">
+        </div>
+    </form>
+
+
+    <table class="table table-bordered" style="border: 1px solid royalblue;width:99%;text-align: center;margin: 30px 15px 15px 15px">
+        <tr>
+            <td>id</td>
+            <td>姓名</td>
+            <td>级别</td>
+            <td>性别</td>
+            <td>工资</td>
+            <td>地区名字</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>123</td>
+            <td>王者</td>
+            <td>男</td>
+            <td>15200</td>
+            <td>北京</td>
+        </tr>
+        <tr>
+            <td colspan="15">
+                    共22页 &nbsp;&nbsp;1/22
+                    &nbsp;&nbsp;每页3条 &nbsp;&nbsp;共66条&nbsp;&nbsp;
+                    <a href="">首页</a>
+                    <a href="">上一页</a>
+                    <a href="">下一页</a>
+                    <a href="">尾页</a>
+                    跳转到第<input type="text">页
+                    <input type="submit"  value="跳转">
+                    每页显示： <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4" >4</option>
+                </select>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+</body>
+</html>
